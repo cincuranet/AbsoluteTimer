@@ -16,9 +16,7 @@ More info: http://blog.cincura.net/id/233549/ .
 		<tags>timer, time, absolute, date</tags>
 	</metadata>
 	<files>
-  <files>
-    <file src=".\AbsoluteTimer\bin\Release\AbsoluteTimer.dll" target="lib\net40-client" />
-    <file src=".\AbsoluteTimer\bin\Release\AbsoluteTimer.pdb" target="lib\net40-client" />
-  </files>
+		<file src=".\AbsoluteTimer\bin\Release\AbsoluteTimer.dll" target="lib\net40-client" />
+		<file src=".\AbsoluteTimer\bin\Release\AbsoluteTimer.pdb" target="lib\net40-client" />
 	</files>
 </package>
