@@ -1,0 +1,1 @@
+nunit3-console.exe --noresult --inprocess AbsoluteTimer.Tests\bin\Debug\AbsoluteTimer.Tests.dll
