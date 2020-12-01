@@ -12,11 +12,13 @@ namespace AbsoluteTimer
         readonly object _state;
         IntPtr _timer;
         IntPtr _dueTime;
+        Interop.TimerCallback _callback;
 
         public AbsoluteTimer(DateTime dt, Action<object> callback, object state)
         {
             _state = state;
-            _timer = Interop.CreateThreadpoolTimer(CallbackToTimerCallback(callback), IntPtr.Zero, IntPtr.Zero);
+            _callback = CallbackToTimerCallback(callback);
+            _timer = Interop.CreateThreadpoolTimer(_callback, IntPtr.Zero, IntPtr.Zero);
             _dueTime = Marshal.AllocHGlobal(FileTimeSize);
             Marshal.StructureToPtr(DateTimeToFILETIME(dt.ToUniversalTime()), _dueTime, false);
             Interop.SetThreadpoolTimer(_timer, _dueTime, 0, 0);
