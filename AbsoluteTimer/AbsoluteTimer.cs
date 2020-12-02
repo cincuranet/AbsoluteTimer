@@ -26,16 +26,16 @@ namespace AbsoluteTimer
 
         public void Dispose()
         {
-            Dispose(true);
+            ReleaseTimer();
             GC.SuppressFinalize(this);
         }
 
         ~AbsoluteTimer()
         {
-            Dispose(false);
+            ReleaseTimer();
         }
 
-        void Dispose(bool disposing)
+        void ReleaseTimer()
         {
             var timer = Interlocked.Exchange(ref _timer, IntPtr.Zero);
             if (timer != IntPtr.Zero)
