@@ -5,11 +5,16 @@
     <OutputType>Library</OutputType>
     <Title>AbsoluteTimer</Title>
     <Product>AbsoluteTimer</Product>
-    <Company>Jiri {x2} Cincura</Company>
-    <Copyright>Copyright (c) Jiri {x2} Cincura</Copyright>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
-    <InformationalVersion>1.0.1.0</InformationalVersion>
+    <Company>Jiří Činčura</Company>
+    <Copyright>Copyright (c) Jiri Cincura</Copyright>
+    <Version>1.1.0</Version>
+    <Authors>$(Company)</Authors>
+    <Description>Timers from Windows / Linux kernels that supports absolute time.
+
+More info: http://blog.cincura.net/id/233549/ .</Description>
+    <PackageProjectUrl>https://github.com/cincuranet/AbsoluteTimer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cincuranet/AbsoluteTimer</RepositoryUrl>
+    <PackageTags>timer, time, absolute, date</PackageTags>
   </PropertyGroup>
 
 </Project>
